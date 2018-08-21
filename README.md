@@ -2,7 +2,7 @@
 
 Welcome to the submission repository for the Bitclave Blockchain Developer Hackathon.
 
-You can read more about the BASE platform [APIs](https://base-node- staging.herokuapp.com/swagger-ui.html#/) and the base-client-js [library](https://github.com/bitclave/base-client-js).
+You can read more about the BASE platform [APIs](https://base-node-staging.herokuapp.com/swagger-ui.html#/) and the base-client-js [library](https://github.com/bitclave/base-client-js).
 
 ## Gitter
 
