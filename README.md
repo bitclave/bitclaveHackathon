@@ -47,7 +47,7 @@ You can open a PR before the deadline and continue to work, but all materials mu
 
 We'd also recommend referencing the issue you created in step 1 [using keywords](https://help.github.com/articles/closing-issues-using-keywords/) in your PR.
 
-**Submit your pull request before the submission deadline: _August 26, 4:00 PM PST_**
+**Submit your pull request before the submission deadline: _August 26, 2:00 PM PST_**
 
 ### 4) Congratulate your team (and yourself) on a job well-done
 Whether or not you get a prize, you deserve to be proud of your work. Thanks for participating in the hackathon!
