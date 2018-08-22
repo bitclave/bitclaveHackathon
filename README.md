@@ -2,7 +2,7 @@
 
 Welcome to the submission repository for the Bitclave Blockchain Developer Hackathon.
 
-You can read more about the BASE platform [APIs](ttps://github.com/bitclave/base-client-js/tree/develop/dist/docs) and the base-client-js [library](https://github.com/bitclave/base-client-js).
+You can read more about the BASE platform [APIs](https://github.com/bitclave/base-client-js/tree/develop/dist/docs) and the base-client-js [library](https://github.com/bitclave/base-client-js).
 
 You can also use this seed project as your hackathon [starter](https://github.com/bitclave/base-tutorial-sample-app).
 
