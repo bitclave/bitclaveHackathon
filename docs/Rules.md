@@ -1,4 +1,6 @@
-                                   Important: Please read these Official Rules before entering this Contest (the “Contest”).
+<p align="center">
+  <b>Important: Please read these Official Rules before entering this Contest (the “Contest”).</b><br>
+</p>
 
 By participating in this Contest, you agree to be bound by these Official Rules and represent that you satisfy all of the eligibility requirements below.
 **NO PURCHASE IS NECESSARY TO ENTER THIS CONTEST.** Contest void where prohibited by law. Subject to applicable federal, state, and local laws.
