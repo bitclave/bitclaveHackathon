@@ -79,7 +79,13 @@ Submissions will be graded across the following equally-weighted criteria:
 1. Likelihood that Submission will be intuitive and easy to use (25%); and
 1. Likelihood that Submission will perform in a high-quality manner (25%).
 
-Info about our super-awesome judges panel can be found on [the team page](https://www.bitclave.com/en/#team).
+Our Silicon Valley Hackathon judges are:
+
+* [Patrick Tague](https://www.linkedin.com/in/patricktague)
+* [Mark Shwartzman](https://www.linkedin.com/in/mark-shwartzman-631568)
+* [Carlee Joe-Wong](https://www.linkedin.com/in/carlee-joe-wong-68551a48/)
+* [Steve Winston](https://www.linkedin.com/in/steve-winston-228169/)
+* [Catherine Fang](https://www.linkedin.com/in/catherine-fang-008849/)
 
 ## Prizes
 
