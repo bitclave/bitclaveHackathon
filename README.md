@@ -87,6 +87,12 @@ Our Silicon Valley Hackathon judges are:
 * [Steve Winston](https://www.linkedin.com/in/steve-winston-228169/)
 * [Catherine Fang](https://www.linkedin.com/in/catherine-fang-008849/)
 
+Our Kyiv Hackathon judges are:
+
+* Margo Paris
+* Yaroslav Polyakov
+* Anton Batalin
+
 ## Prizes
 
 a. Best Overall Submission: One winner will receive $4,000.
