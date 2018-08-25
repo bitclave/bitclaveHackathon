@@ -8,7 +8,7 @@ You can also use this seed project as your hackathon [starter](https://github.co
 
 ## Gitter
 
-To meet potential team members, chat about projects, or get help with your code and the base-client-js library, head over to the  [the bitclaveHackathon Gitter](https://gitter.im/bitclaveHackathon/Lobby#).
+To meet potential team members, chat about projects, or get help with your code and the base-client-js library, head over to the  [the bitclavedevs Telegram channel](https://t.me/bitclavedevs).
 
 
 # Submission Guidelines
