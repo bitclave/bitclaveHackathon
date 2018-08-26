@@ -1,9 +1,75 @@
 <div class="dashboard-container">
-    <div class="dashboard-column">
+    <div style="width: 100%">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+      <script>
+          $( "#mysubmit" ).click(function() {
+              alert( "Handler for .click() called." );
+          });
+      </script>
 
-        <div>
-          <form action="http://localhost:3000/api/org.example.mynetwork.Question" method="post">
+      <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+
+        div {
+          border-radius: 5px;
+          background-color: #ffffff;
+          padding: 20px;
+        }
+        select{
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          padding: 5px;
+        }
+
+        label {
+          color: #000000;
+        }
+      </style>
+        <div style="width: 100%">
+          <form action="http://localhost:3000/io.chain.research.SampleAsset" method="post">
+
+            <fieldset style="border-bottom-color: #ffffff;border: 1px solid #ccc;border-radius:4px;">
+              <legend style="color:#000000">Select Type</legend>
+            <div style="padding: 0px">
+              <input type="radio" id="hybrid" name="cartype" checked />
+              <label for="hybrid">Hybrid</label>
+            </div>
+
+            <div style="padding: 0px">
+              <input type="radio" id="electric" name="cartype" />
+              <label for="electric">Electric</label>
+            </div>
+
+            <div style="padding: 0px">
+              <input type="radio" id="gas" name="cartype" />
+              <label for="gas">Gas</label>
+            </div>
+            </fieldset>
 
             <input type="hidden" name="$class" value="org.example.mynetwork.Question">
             <input type="hidden" id="questionId" name="qid" value="97984">
@@ -17,132 +83,168 @@
           </form>
         </div>
 
-    </div>
-    <div class="dashboard-column">
-
-      <div *ngIf="displayOptions.wallet" class="dashboard-card wallet_box">
-        <div class="title-dashboard-card">WALLET</div>
-        <mat-card>
-          <div class="flex-container mb15">
-            <div class="flex-item">
-              <div class="flex-container flex-container_addon">
-                <div class="flex-item">
-                  <div class="img_box"></div>
-                </div>
-                <div class="flex-item">
-                  <p class="white white_big">CAT balance</p>
-                  <p class="white">Wallet of my dear grand&hellip;</p>
-                </div>
+            <fieldset style="border-bottom-color: #ffffff;border: 1px solid #ccc;border-radius:4px;">
+              <legend style="color:#000000">Select Make</legend>
+              <div style="padding: 0px">
+                <input type="radio" id="bmw" name="model" checked />
+                <label for="bmw">BMW</label>
               </div>
-            </div>
-            <div class="flex-item">
-              <p class="green green_big text-right">48 CAT</p>
-              <p class="green text-right">Pending <strong>+14 CAT</strong></p>
-            </div>
-          </div>
 
-          <div class="flex-container">
-            <div class="flex-item">
-              <button mat-button color="primary" class="show_address"><span>Show address</span></button>
-            </div>
-            <div class="flex-item">
-              <button mat-button color="primary" class="refresh"><span class="refresh_icon"></span><span>Refresh</span></button>
-            </div>
-          </div>
-        </mat-card>
-      </div>
-
-      <div *ngIf="displayOptions.wallet" class="dashboard-card total_balance">
-        <mat-card>
-          <div class="flex-container">
-            <div class="flex-item">
-              <p class="white">Total balance</p>
-              <p>14 wallets</p>
-            </div>
-            <div class="flex-item">
-              <p class="green text-right">ETH 928.104</p>
-              <p class="text-right">$ 558189.58</p>
-            </div>
-          </div>
-        </mat-card>
-      </div>
-
-      <a *ngIf="displayOptions.wallet" href="javascript:void(0);" class="add_wallets"><span>Add wallets</span></a>
-
-      <div *ngIf="displayOptions.rewards" class="dashboard-card">
-        <div class="title-dashboard-card">REWARD HISTORY</div>
-        <mat-card class="dashboard reward-history-widget google_search_history">
-          <mat-list>
-
-            <mat-list-item class="reward-history-widget">
-              <div class="flex-container">
-                <div class="flex-item">
-                  <div class="reward-history-widget title-group">
-                    <p class="acent-text">BitClave</p>
-                    <p class="dashboard-regular-text">Jun 8, 2018, 2:25:20 PM</p>
-                  </div>
-                </div>
-                <div class="flex-item">
-                  <div class="reward-history-widget amount-group">
-                    <p class="dashboard-regular-text color-green"> +9 CAT</p>
-                  </div>
-                </div>
+              <div style="padding: 0px">
+                <input type="radio" id="nissan" name="model" />
+                <label for="nissan">Nissan</label>
               </div>
-            </mat-list-item>
 
-            <mat-divider></mat-divider>
-
-            <mat-list-item class="reward-history-widget">
-              <div class="flex-container">
-                <div class="flex-item">
-                  <div class="reward-history-widget title-group">
-                      <p class="acent-text">Chatello ICO</p>
-                      <p class="dashboard-regular-text">Jun 8, 2018, 2:25:20 PM</p>
-                  </div>
-                </div>
-                <div class="flex-item">
-                  <div class="reward-history-widget amount-group">
-                    <p class="dashboard-regular-text color-green"> +2 CAT</p>
-                  </div>
-                </div>
+              <div style="padding: 0px">
+                <input type="radio" id="porsche" name="model" />
+                <label for="porsche">Porsche</label>
               </div>
-            </mat-list-item>
 
-            <mat-divider></mat-divider>
-
-            <mat-list-item class="reward-history-widget">
-              <div class="flex-container">
-                <div class="flex-item">
-                  <div class="reward-history-widget title-group">
-                    <p class="acent-text">Chumak & Co INC</p>
-                    <p class="dashboard-regular-text">Jun 8, 2018, 2:25:20 PM</p>
-                  </div>
-                </div>
-                <div class="flex-item">
-                  <div class="reward-history-widget amount-group">
-                    <p class="dashboard-regular-text color-green"> +17 CAT</p>
-                  </div>
-                </div>
+              <div style="padding: 0px">
+                <input type="radio" id="tesla" name="model" />
+                <label for="tesla">Tesla</label>
               </div>
-            </mat-list-item>
+            </fieldset>
 
-            <mat-divider></mat-divider>
+            <br/>
+            <label for="fname">Price</label>
+            <input type="text" id="fname" onclick="onDashboardLoad();" name="firstname" placeholder="Price willing to pay..">
 
-            <mat-card-actions align="center">
-                <button mat-button color="primary"><span>Show all</span></button>
-            </mat-card-actions>
-          </mat-list>
-        </mat-card>
-      </div>
+            <label for="lname">Comments</label>
+            <input type="text" id="lname" name="lastname" placeholder="Any Comments..">
 
-      <div *ngIf="displayOptions.kyc" class="dashboard-card">
-        <div class="title-dashboard-card">KYC</div>
-        <mat-card>
-          <mat-card-actions class="dashboard verified_user">
-            <button mat-button color="primary"><mat-icon class="svg_icon" svgIcon="verified">verified</mat-icon><span>Verified user</span></button>
-          </mat-card-actions>
-        </mat-card>
-      </div>
+
+            <input id="mysubmit" type="submit" value="Submit">
+          </form>
+        </div>
 
     </div>
+
+  <!--<div class="dashboard-column">-->
+
+      <!--<div *ngIf="displayOptions.wallet" class="dashboard-card wallet_box">-->
+        <!--<div class="title-dashboard-card">WALLET</div>-->
+        <!--<mat-card>-->
+          <!--<div class="flex-container mb15">-->
+            <!--<div class="flex-item">-->
+              <!--<div class="flex-container flex-container_addon">-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="img_box"></div>-->
+                <!--</div>-->
+                <!--<div class="flex-item">-->
+                  <!--<p class="white white_big">CAT balance</p>-->
+                  <!--<p class="white">Wallet of my dear grand&hellip;</p>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="flex-item">-->
+              <!--<p class="green green_big text-right">48 CAT</p>-->
+              <!--<p class="green text-right">Pending <strong>+14 CAT</strong></p>-->
+            <!--</div>-->
+          <!--</div>-->
+
+          <!--<div class="flex-container">-->
+            <!--<div class="flex-item">-->
+              <!--<button mat-button color="primary" class="show_address"><span>Show address</span></button>-->
+            <!--</div>-->
+            <!--<div class="flex-item">-->
+              <!--<button mat-button color="primary" class="refresh"><span class="refresh_icon"></span><span>Refresh</span></button>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+
+      <!--<div *ngIf="displayOptions.wallet" class="dashboard-card total_balance">-->
+        <!--<mat-card>-->
+          <!--<div class="flex-container">-->
+            <!--<div class="flex-item">-->
+              <!--<p class="white">Total balance</p>-->
+              <!--<p>14 wallets</p>-->
+            <!--</div>-->
+            <!--<div class="flex-item">-->
+              <!--<p class="green text-right">ETH 928.104</p>-->
+              <!--<p class="text-right">$ 558189.58</p>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+
+      <!--<a *ngIf="displayOptions.wallet" href="javascript:void(0);" class="add_wallets"><span>Add wallets</span></a>-->
+
+      <!--<div *ngIf="displayOptions.rewards" class="dashboard-card">-->
+        <!--<div class="title-dashboard-card">REWARD HISTORY</div>-->
+        <!--<mat-card class="dashboard reward-history-widget google_search_history">-->
+          <!--<mat-list>-->
+
+            <!--<mat-list-item class="reward-history-widget">-->
+              <!--<div class="flex-container">-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="reward-history-widget title-group">-->
+                    <!--<p class="acent-text">BitClave</p>-->
+                    <!--<p class="dashboard-regular-text">Jun 8, 2018, 2:25:20 PM</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="reward-history-widget amount-group">-->
+                    <!--<p class="dashboard-regular-text color-green"> +9 CAT</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</mat-list-item>-->
+
+            <!--<mat-divider></mat-divider>-->
+
+            <!--<mat-list-item class="reward-history-widget">-->
+              <!--<div class="flex-container">-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="reward-history-widget title-group">-->
+                      <!--<p class="acent-text">Chatello ICO</p>-->
+                      <!--<p class="dashboard-regular-text">Jun 8, 2018, 2:25:20 PM</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="reward-history-widget amount-group">-->
+                    <!--<p class="dashboard-regular-text color-green"> +2 CAT</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</mat-list-item>-->
+
+            <!--<mat-divider></mat-divider>-->
+
+            <!--<mat-list-item class="reward-history-widget">-->
+              <!--<div class="flex-container">-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="reward-history-widget title-group">-->
+                    <!--<p class="acent-text">Chumak & Co INC</p>-->
+                    <!--<p class="dashboard-regular-text">Jun 8, 2018, 2:25:20 PM</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+                <!--<div class="flex-item">-->
+                  <!--<div class="reward-history-widget amount-group">-->
+                    <!--<p class="dashboard-regular-text color-green"> +17 CAT</p>-->
+                  <!--</div>-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</mat-list-item>-->
+
+            <!--<mat-divider></mat-divider>-->
+
+            <!--<mat-card-actions align="center">-->
+                <!--<button mat-button color="primary"><span>Show all</span></button>-->
+            <!--</mat-card-actions>-->
+          <!--</mat-list>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+
+      <!--<div *ngIf="displayOptions.kyc" class="dashboard-card">-->
+        <!--<div class="title-dashboard-card">KYC</div>-->
+        <!--<mat-card>-->
+          <!--<mat-card-actions class="dashboard verified_user">-->
+            <!--<button mat-button color="primary"><mat-icon class="svg_icon" svgIcon="verified">verified</mat-icon><span>Verified user</span></button>-->
+          <!--</mat-card-actions>-->
+        <!--</mat-card>-->
+      <!--</div>-->
+
+    <!--</div>-->
   </div>
