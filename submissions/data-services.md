@@ -13,9 +13,7 @@ The project code lives at https://github.com/amirhyoussefi/blockchain-data-servi
 ### Final Commit
 The final commit of our project for submission is last commit at: 
 
-https://github.com/amirhyoussefi/blockchain-data-services.git
-
-https://github.com/amirhyoussefi/blockchain-data-services/commit/X
+https://github.com/amirhyoussefi/blockchain-data-services/commit/5459d1ba5f9aa90c2cf4cce154390b01b09b43d7
 
 ### Team
 The project was built with contributions from:
