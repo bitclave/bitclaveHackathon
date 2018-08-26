@@ -51,67 +51,35 @@
         }
       </style>
         <div style="width: 100%">
-          <form action="http://localhost:3000/io.chain.research.SampleAsset" method="post">
+          <form action="http://localhost:3000/api/org.example.mynetwork.SubmitForm" method="post">
+            <input type="hidden" name="formSchema" value="resource:org.example.mynetwork.FormSchema#542" />
+            <input type="hidden" name="user" value="resource:org.example.mynetwork.User#84000" />
 
             <fieldset style="border-bottom-color: #ffffff;border: 1px solid #ccc;border-radius:4px;">
               <legend style="color:#000000">Select Type</legend>
-            <div style="padding: 0px">
-              <input type="radio" id="hybrid" name="cartype" checked />
-              <label for="hybrid">Hybrid</label>
-            </div>
-
-            <div style="padding: 0px">
-              <input type="radio" id="electric" name="cartype" />
-              <label for="electric">Electric</label>
-            </div>
-
-            <div style="padding: 0px">
-              <input type="radio" id="gas" name="cartype" />
-              <label for="gas">Gas</label>
-            </div>
+               <select name="answer1">
+                <option value="hybrid" >Hybrid</option>
+                <option value="electric" >Electric</option>
+                <option value="gas"  >Gas</option>
+              </select>
             </fieldset>
-
-            <input type="hidden" name="$class" value="org.example.mynetwork.Question">
-            <input type="hidden" id="questionId" name="qid" value="97984">
-            question:<br>
-            <input type="text" name="question" value="Mickey">
-            <br>
-            description:<br>
-            <input type="text" name="description" value="Mouse">
-            <br><br>
-            <input type="submit" value="Submit">
-          </form>
-        </div>
 
             <fieldset style="border-bottom-color: #ffffff;border: 1px solid #ccc;border-radius:4px;">
               <legend style="color:#000000">Select Make</legend>
-              <div style="padding: 0px">
-                <input type="radio" id="bmw" name="model" checked />
-                <label for="bmw">BMW</label>
-              </div>
-
-              <div style="padding: 0px">
-                <input type="radio" id="nissan" name="model" />
-                <label for="nissan">Nissan</label>
-              </div>
-
-              <div style="padding: 0px">
-                <input type="radio" id="porsche" name="model" />
-                <label for="porsche">Porsche</label>
-              </div>
-
-              <div style="padding: 0px">
-                <input type="radio" id="tesla" name="model" />
-                <label for="tesla">Tesla</label>
-              </div>
+              <select name="answer2">
+                <option value="bmw" > BMW</option>
+                <option value="nissan" >Nissan</option>
+                <option value="porsche" >Porsche</option>
+                <option value="tesla"  >Tesla</option>
+              </select>
             </fieldset>
 
             <br/>
             <label for="fname">Price</label>
-            <input type="text" id="fname" onclick="onDashboardLoad();" name="firstname" placeholder="Price willing to pay..">
+            <input type="text" id="fname" onclick="onDashboardLoad();" name="answer3" placeholder="Price willing to pay..">
 
             <label for="lname">Comments</label>
-            <input type="text" id="lname" name="lastname" placeholder="Any Comments..">
+            <input type="text" id="lname" name="answer4" placeholder="Any Comments..">
 
             <label for="lname">Email</label>
             <input type="email" id="email" name="email" value="{{displayOptions.email}}}" placeholder="Any Comments..">

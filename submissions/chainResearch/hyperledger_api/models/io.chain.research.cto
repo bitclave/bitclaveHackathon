@@ -3,14 +3,6 @@
 */
 namespace org.example.mynetwork
 
-asset Commodity identified by tradingSymbol {
-o String tradingSymbol
-o String description
-o String mainExchange
-o Double quantity
---> Trader owner
-}
-
 asset Question identified by qid {
 o String qid
 o String question
@@ -18,20 +10,20 @@ o String question
 
 asset FormSchema identified by formid {
 o String formid
-o Question[] questions
+--> Question[] questions
 --> Company company
 }
 
 asset Answer identified by ansid {
 o String ansid
 o String answer
---> Question question
 }
 
 asset FormResponse identified by respid {
 o String respid
---> Answer[] answer
+--> Answer[] answers
 --> FormSchema formSchema
+--> User user
 }
 
 participant User identified by userid {
@@ -61,6 +53,10 @@ o String field4
 }
 
 transaction SubmitForm {
---> FormResponse formresponse
+  o String answer1
+  o String answer2
+  o String answer3
+  o String answer4
+--> FormSchema formSchema
 --> User user
 }
