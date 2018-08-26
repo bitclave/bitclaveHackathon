@@ -4,7 +4,7 @@
 This is an awesome project that solves a real problem in the decentralized ecosystem.
 
 ### Issue
-This closes the issue bitclaveHackathon#1
+This closes the issue https://github.com/bitclave/bitclaveHackathon/issues/12
 
 ### Repository
 
