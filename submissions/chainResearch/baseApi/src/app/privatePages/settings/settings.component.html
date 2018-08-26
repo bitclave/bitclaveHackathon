@@ -39,6 +39,11 @@
                   kyc
                 </mat-slide-toggle>
 
+                <mat-form-field>
+                    <input matInput type="email" placeholder="Email"
+                           [(ngModel)]="displayOptions.email">
+                </mat-form-field>
+
             </div>
             <mat-card-actions align="end">
               <button color="primary" (click)="saveDisplayOptions()" mat-button>Save Options</button>
