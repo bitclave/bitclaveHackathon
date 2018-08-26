@@ -1,26 +1,34 @@
 # An Example Project for the Bitclave Hackathon
 
 ## Project Description
-This is an awesome project that solves a real problem in the decentralized ecosystem.
+Rethinking Search -- connecting consumers and retailers through a reverse auction marketplace.
+A platform where users can bid for a price they want to buy an item at and retailers can compete to offer you the lowest price.
 
 ### Issue
-This closes the issue bitclaveHackathon#1
+This closes the issue bitclaveHackathon#3 https://github.com/bitclave/bitclaveHackathon/issues/3
 
 ### Repository
 
-The project code lives at https://github.com/username_or_organization/exampleProject
+The project code lives at https://github.com/pintojoey/bidwin
 
 ### Final Commit
 The final commit of our project for submission is:
-https://github.com/username_or_organization/exampleProject/commit/793fafb21efbbee0620d74381dd11d3f25938726
+https://github.com/pintojoey/bidwin/commit/dbfd7bfc5a6c972119ce806b2a046e7413cd65cd
 
 ### Team
 The project was built with contributions from:
 
-- Tom Cat(@tomthecat on GitHub, tom@bitclave.com)
+Joey Pinto (pintojoey@gmail.com)
+https://www.linkedin.com/in/pintojoey/
+
+Theodore Brinkofski
+tgb29@cornell.edu
+
+Shanmuga Priyaa Venkatachalam
+shanmugv@andrew.cmu.edu
 
 ---
 
 ## Additional Materials
 
-We created a [demo video](https://www.youtube.com/watch?v=dQw4w9WgXcQ) to help understand the vision and how the parts of our project fit together.
+We created a presentation https://docs.google.com/presentation/d/1eFu906pZy41FEawlYtO5OU3eTiE-a4wHRrvAHt2b9Ic/edit?usp=sharing to help understand the vision and how the parts of our project fit together.
