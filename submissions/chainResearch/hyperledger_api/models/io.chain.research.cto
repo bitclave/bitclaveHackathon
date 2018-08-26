@@ -49,6 +49,7 @@ o String field1
 o String field2
 o String field3
 o String field4
+o String field5
 --> Company company
 }
 
@@ -57,6 +58,7 @@ transaction SubmitForm {
   o String answer2
   o String answer3
   o String answer4
+  o String answer5
 --> FormSchema formSchema
 --> User user
 }

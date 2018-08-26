@@ -23,11 +23,15 @@ async function submitForm(tx) {  // eslint-disable-line no-unused-vars
   	answer3.answer = tx.answer3
     var answer4 = factory.newResource('org.example.mynetwork', 'Answer', respid + Math.ceil((Math.random()*1000)));
   	answer4.answer = tx.answer4
+    var answer5 = factory.newResource('org.example.mynetwork', 'Answer', respid + Math.ceil((Math.random()*1000)));
+  	answer5.answer = tx.answer5
   
   	await answerAssetRegistry.add(answer1)
   	await answerAssetRegistry.add(answer2)
   	await answerAssetRegistry.add(answer3)
   	await answerAssetRegistry.add(answer4)
+  	await answerAssetRegistry.add(answer5)
+
 
   
 	formResponse.answers= []
@@ -35,6 +39,7 @@ async function submitForm(tx) {  // eslint-disable-line no-unused-vars
   	formResponse.answers.push(answer2);
   	formResponse.answers.push(answer3);
   	formResponse.answers.push(answer4);
+  	formResponse.answers.push(answer5);
 
     await formResponseAssetRegistry.add(formResponse);
 }
@@ -60,16 +65,20 @@ async function createNewForm(tx) {  // eslint-disable-line no-unused-vars
 	question3.question = tx.field3;
     var question4 = factory.newResource('org.example.mynetwork', 'Question', formId + "" + Math.ceil((Math.random()*1000)));
 	question4.question = tx.field4;
+    var question5 = factory.newResource('org.example.mynetwork', 'Question', formId + "" + Math.ceil((Math.random()*1000)));
+	question5.question = tx.field5;
   	await questionAssetRegistry.add(question1)
   	await questionAssetRegistry.add(question2)
   	await questionAssetRegistry.add(question3)
   	await questionAssetRegistry.add(question4)
+  	await questionAssetRegistry.add(question5)
 
 	formSchema.questions= []
   	formSchema.questions.push(question1);
   	formSchema.questions.push(question2);
   	formSchema.questions.push(question3);
   	formSchema.questions.push(question4);
+  	formSchema.questions.push(question5);
   
   	formSchema.company = tx.company
     await formSchemaAssetRegistry.add(formSchema);
