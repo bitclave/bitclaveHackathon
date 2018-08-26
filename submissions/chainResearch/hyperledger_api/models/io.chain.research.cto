@@ -1,0 +1,64 @@
+/**
+* My commodity trading network
+*/
+namespace org.example.mynetwork
+
+asset Question identified by qid {
+o String qid
+o String question
+}
+
+asset FormSchema identified by formid {
+o String formid
+--> Question[] questions
+--> Company company
+}
+
+asset Answer identified by ansid {
+o String ansid
+o String answer
+}
+
+asset FormResponse identified by respid {
+o String respid
+--> Answer[] answers
+--> FormSchema formSchema
+--> User user
+}
+
+participant User identified by userid {
+o String userid
+o String firstName
+o String lastName
+}
+
+participant Company identified by custid {
+o String custid
+o String firstName
+o String lastName
+}
+
+participant Trader identified by tradeId {
+o String tradeId
+o String firstName
+o String lastName
+}
+
+transaction CreateNewForm {
+o String field1
+o String field2
+o String field3
+o String field4
+o String field5
+--> Company company
+}
+
+transaction SubmitForm {
+  o String answer1
+  o String answer2
+  o String answer3
+  o String answer4
+  o String answer5
+--> FormSchema formSchema
+--> User user
+}
