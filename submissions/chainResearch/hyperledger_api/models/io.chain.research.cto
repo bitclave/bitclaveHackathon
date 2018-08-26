@@ -14,12 +14,11 @@ o Double quantity
 asset Question identified by qid {
 o String qid
 o String question
-o String description
 }
 
 asset FormSchema identified by formid {
 o String formid
---> Question[] questions
+o Question[] questions
 --> Company company
 }
 
@@ -54,20 +53,14 @@ o String lastName
 }
 
 transaction CreateNewForm {
---> FormSchema formSchema
+o String field1
+o String field2
+o String field3
+o String field4
 --> Company company
 }
 
 transaction SubmitForm {
 --> FormResponse formresponse
 --> User user
-}
-
-transaction Trade {
---> Commodity commodity
---> Trader newOwner
-}
-
-event SampleEvent {
---> FormResponse formResponse
 }
