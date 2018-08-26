@@ -1,6 +1,12 @@
 <div class="dashboard-container">
     <div style="width: 100%">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+      <script>
+          $( "#mysubmit" ).click(function() {
+              alert( "Handler for .click() called." );
+          });
+      </script>
 
       <style>
         input[type=text], select {
@@ -91,13 +97,13 @@
 
             <br/>
             <label for="fname">Price</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" onclick="onDashboardLoad();" name="firstname" placeholder="Price willing to pay..">
 
             <label for="lname">Comments</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" placeholder="Any Comments..">
 
 
-            <input type="submit" value="Submit">
+            <input id="mysubmit" type="submit" value="Submit">
           </form>
         </div>
 
