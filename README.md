@@ -90,7 +90,7 @@ Our Silicon Valley Hackathon judges are:
 Our Kyiv Hackathon judges are:
 
 * Margo Paris
-* Yaroslav Polyakov
+* [Yaroslav Polyakov](https://www.linkedin.com/in/poliak/)
 * Anton Batalin
 
 ## Prizes
